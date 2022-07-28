@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form></form></title>
+
+
+        <!-- aos link style css #inside head #outside title -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<style>
+   
+
+
+    .body_main {
+        margin: 0%;
+        padding: 0%;
+        background-color: whitesmoke;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        background-image: url("http://sensorytraining.co.nz/wp/wp-content/uploads/2016/04/fit2-sunset1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .div_main {
+        background-color: white;
+        height: 320px;
+        width: 400px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    .h1_title {
+        justify-content: center;
+        display: flex;
+    }
+
+    .input_form {
+        width: 100%;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+        border: 0.5px solid gray;
+        border-radius: 2px;
+    }
+
+    .button_1 {
+        padding: 10px 0px;
+        width: 100%;
+        background-color: rgb(82, 82, 248);
+        border-radius: 5px;
+        border: none;
+        color: white;
+    }
+
+    .p_p1 {
+        color: gray;
+        text-align: end;
+    }
+
+    @media only screen and (max-width: 500px) {
+        .div_main{
+            height: 280px;
+            width: 250px;
+        
+        }
+    }
+</style>
+
+<body class="body_main">
+    <!-- data-aos-duration thi time aapi sk -->
+    
+    <div class="div_main" data-aos="zoom-in" data-aos-duration="2000">
+        
+            <h1 class="h1_title" data-aos="fade-right" data-aos-duration="2000">Login </h1>
+        
+
+        <input type="text" placeholder="Username" class="input_form" data-aos="flip-left" data-aos-duration="2000">
+
+
+        <input type="text" placeholder="Password" class="input_form" data-aos="flip-left" data-aos-duration="2000">
+
+
+        <button class="button_1" data-aos="flip-left" data-aos-duration="2000">Login</button>
+
+        <p class="p_p1" data-aos="fade-right" data-aos-duration="2000">Forgotten password</p>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <!-- aos js style ink -->
+
+</body>
+
+</html>
